@@ -2,6 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useGetCustomerById } from "@/queries/customers";
 import { useUpdateCustomer } from "@/actions/updateCustomer";
 import { useState, useEffect } from "react";
+import GlobalFallback from "@/components/ui/global-fallback"
+
 
 export default function CustomerEdit() {
     const params = useParams();
@@ -18,7 +20,6 @@ export default function CustomerEdit() {
         status: customer?.status || "",
     });
 
-    // Update form when customer data loads
     useEffect(() => {
         if (customer) {
             setForm({
@@ -32,7 +33,9 @@ export default function CustomerEdit() {
         }
     }, [customer]);
 
-    if (isLoading) return <div className="flex justify-center items-center h-64"> loading</div>;
+    if (isLoading) return <div className="flex justify-center items-center h-64"> 
+    <GlobalFallback/>
+    </div>;
     if (error) return <div className="text-red-500">حدث خطأ أثناء جلب بيانات العميل.</div>;
     if (!customer) return <div>لا يوجد بيانات لهذا العميل.</div>;
 

@@ -3,7 +3,7 @@ import { apiClient } from "@/lib/api-client"
 export const dummyCustomers = async () => {
     const response = await apiClient<Customer[]>({
         method: "GET",
-        url: "http://localhost:3001/customers",
+        url: "https://vue-project-kka9.vercel.app/customers",
     })
 
     return response
@@ -12,7 +12,7 @@ export const dummyCustomers = async () => {
 export const getCustomerById = async (id: number) => {
     const response = await apiClient<Customer>({
         method: "GET",
-        url: `http://localhost:3001/customers/${id}`,
+        url: `https://vue-project-kka9.vercel.app/customers/${id}`,
     })
     return response
 }
@@ -20,7 +20,7 @@ export const getCustomerById = async (id: number) => {
 export const updateCustomer = async (id: number, data: Partial<Customer>) => {
     const response = await apiClient({
         method: "PUT",
-        url: `http://localhost:3001/customers/${id}`,
+        url: `https://vue-project-kka9.vercel.app/customers/${id}`,
         body: data,
     })
     return response
