@@ -1,12 +1,16 @@
 import { zodResolver } from "@hookform/resolvers/zod"
+
 import { useForm } from "react-hook-form"
+
 import { cn } from "@/lib/utils"
+
 import { Button } from "@/components/ui/button"
+import { Checkbox } from "@/components/ui/checkbox"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { Checkbox } from "@/components/ui/checkbox"
-import { type AddCustomerFormSchema, addCustomerFormSchema } from "@/components/forms/add-customer/schema"
+
 import { useCreateCustomers } from "@/actions/addCutomer"
+import { type AddCustomerFormSchema, addCustomerFormSchema } from "@/components/forms/add-customer/schema"
 
 type Props = {
     className?: string
@@ -26,8 +30,8 @@ export default function AddCustomerForm({ className }: Readonly<Props>) {
         },
     })
 
-    function onSubmit(values: Customer[]) {
-        mutate(values)
+    function onSubmit(values: AddCustomerFormSchema) {
+        mutate(values as unknown as Customer[])
     }
 
     return (
@@ -111,20 +115,18 @@ export default function AddCustomerForm({ className }: Readonly<Props>) {
                                         <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                                     </FormControl>
                                     <div className="space-y-1 leading-none">
-                                        <FormLabel>
-                                            Status
-                                        </FormLabel>
+                                        <FormLabel>Status</FormLabel>
                                     </div>
                                 </FormItem>
                             )}
                         />
 
                         <Button type="submit" size="lg">
-                            {isPending ? "loading" : 'add cutomer'}
+                            {isPending ? "loading" : "add cutomer"}
                         </Button>
                     </form>
                 </Form>
             </div>
         </div>
     )
-} 
+}
