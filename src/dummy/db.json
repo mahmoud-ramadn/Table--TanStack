@@ -162,15 +162,6 @@
       "status": false
     },
     {
-      "id": "2",
-      "customer": "Customer 2 Name",
-      "company": "Company 2",
-      "phoneName": 663881,
-      "email": "customer2@example.com",
-      "count": 1,
-      "status": true
-    },
-    {
       "id": "3",
       "customer": "Customer 3 Name",
       "company": "Company 3",
@@ -186,33 +177,6 @@
       "phoneName": 732395,
       "email": "customer4@example.com",
       "count": 35,
-      "status": false
-    },
-    {
-      "id": "5",
-      "customer": "Customer 5 Name",
-      "company": "Company 5",
-      "phoneName": 456637,
-      "email": "customer5@example.com",
-      "count": 99,
-      "status": true
-    },
-    {
-      "id": "6",
-      "customer": "Customer 6 Name",
-      "company": "Company 6",
-      "phoneName": 348421,
-      "email": "customer6@example.com",
-      "count": 48,
-      "status": true
-    },
-    {
-      "id": "7",
-      "customer": "Customer 7 Name",
-      "company": "Company 7",
-      "phoneName": 930843,
-      "email": "customer7@example.com",
-      "count": 8,
       "status": false
     },
     {
@@ -234,42 +198,6 @@
       "status": false
     },
     {
-      "id": "10",
-      "customer": "Customer 10 Name",
-      "company": "Company 10",
-      "phoneName": 983995,
-      "email": "customer10@example.com",
-      "count": 48,
-      "status": false
-    },
-    {
-      "id": "11",
-      "customer": "Customer 11 Name",
-      "company": "Company 11",
-      "phoneName": 181961,
-      "email": "customer11@example.com",
-      "count": 90,
-      "status": false
-    },
-    {
-      "id": "12",
-      "customer": "Customer 12 Name",
-      "company": "Company 12",
-      "phoneName": 983053,
-      "email": "customer12@example.com",
-      "count": 48,
-      "status": false
-    },
-    {
-      "id": "13",
-      "customer": "Customer 13 Name",
-      "company": "Company 13",
-      "phoneName": 401297,
-      "email": "customer13@example.com",
-      "count": 76,
-      "status": false
-    },
-    {
       "id": "14",
       "customer": "Customer 14 Name",
       "company": "Company 14",
@@ -277,24 +205,6 @@
       "email": "customer14@example.com",
       "count": 3,
       "status": true
-    },
-    {
-      "id": "15",
-      "customer": "Customer 15 Name",
-      "company": "Company 15",
-      "phoneName": 509989,
-      "email": "customer15@example.com",
-      "count": 3,
-      "status": false
-    },
-    {
-      "id": "16",
-      "customer": "Customer 16 Name",
-      "company": "Company 16",
-      "phoneName": 595738,
-      "email": "customer16@example.com",
-      "count": 87,
-      "status": false
     },
     {
       "id": "17",
@@ -315,15 +225,6 @@
       "status": true
     },
     {
-      "id": "19",
-      "customer": "Customer 19 Name",
-      "company": "Company 19",
-      "phoneName": 427346,
-      "email": "customer19@example.com",
-      "count": 78,
-      "status": false
-    },
-    {
       "id": "20",
       "customer": "Customer 20 Name",
       "company": "Company 20",
@@ -331,15 +232,6 @@
       "email": "customer20@example.com",
       "count": 41,
       "status": true
-    },
-    {
-      "id": "21",
-      "customer": "Customer 21 Name",
-      "company": "Company 21",
-      "phoneName": 680517,
-      "email": "customer21@example.com",
-      "count": 69,
-      "status": false
     },
     {
       "id": "22",
@@ -655,18 +547,6 @@
       "email": "mr9026573@gmail.com",
       "count": 46,
       "status": false
-    },
-    {
-      "0": {
-        "id": 1750609524945,
-        "customer": "‪Mahmoud Ramadan‬‏dddddd",
-        "company": "Inbotsddd",
-        "phoneName": "1067958518",
-        "email": "mr9026573@gmail.com",
-        "count": 1,
-        "status": "active"
-      },
-      "id": "81e9"
     }
   ]
 }

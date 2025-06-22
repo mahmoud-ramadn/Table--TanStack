@@ -10,10 +10,6 @@ import { useDummyPosts } from "@/queries/dummy"
 export default function Index() {
     const columns: ColumnDef<Post>[] = [
         {
-            accessorKey: "id",
-            header: "#",
-        },
-        {
             accessorKey:"content",
             header: "العنوان",
         },
